@@ -63,6 +63,20 @@
     left: 50%;
     position: absolute;
   }
+  .google-maps {
+    position: relative;
+    padding-bottom: 90%; // (450 ÷ 500 = 0.9 = 90%)
+    height: 0;
+    overflow: hidden;
+ }
+ .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+ }
+
   
  
   </style>
@@ -113,7 +127,7 @@
 	</div>
 
 <!-- About -->
-	<div class="container-fluid about text-center container" id="about">
+	<div class="container-fluid about text-center" id="about">
 		<div class="row">
 		<div class="col-sm-4">
 		</div>
@@ -159,7 +173,16 @@
 <div class="introduction text-center container-fluid" id="contact">  
   <h3 class="margin">Contact</h3><br>
   
-  <iframe width="600" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJhUJBj7PiEogRZKDV8FC_vjI&key=AIzaSyBrMdzZkm4FWKkrRgru6dfL6vmrYNrqHrE" allowfullscreen></iframe>
+  <div>
+	  <iframe width="60%"
+		height="100% "
+		min-height="600px"
+		frameborder="0" style="border:0"
+		src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJhUJBj7PiEogRZKDV8FC_vjI&key=AIzaSyBrMdzZkm4FWKkrRgru6dfL6vmrYNrqHrE" allowfullscreen>
+	  </iframe>
+  </div>
+  
+  
   
   <p>Feel free to reach out to me via email or check out my projects on GitHub</p>
   
