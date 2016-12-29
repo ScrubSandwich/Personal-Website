@@ -9,6 +9,9 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="/img/favicon.png">
   
   <style>
   body {
@@ -16,27 +19,30 @@
       line-height: 1.8;
       color: #f5f6f7;
   }
-  p {font-size: 16px;}
+  p {font-size: 18px;}
   .margin {margin-bottom: 45px;}
-  .bg-1 { 
-      background-color: #1abc9c; /* Green */
+  
+  .introduction { 
+      background-color: #333366; /* Green */
       color: #ffffff;
   }
-  .bg-2 { 
-      background-color: #474e5d; /* Dark Blue */
+  .about { 
+      background-color: #336666; /* Dark Blue */
       color: #ffffff;
   }
-  .bg-3 { 
-      background-color: #ffffff; /* White */
+  .work { 
+      background-color: #ccffff; /* White */
       color: #555555;
   }
-  .bg-4 { 
+  .footer { 
       background-color: #2f2f2f; /* Black Gray */
       color: #fff;
+	  padding-top: 20px;
+      padding-bottom: 20px;
   }
   .container-fluid {
-      padding-top: 70px;
-      padding-bottom: 70px;
+      padding-top: 50px;
+      padding-bottom: 50px;
   }
   .navbar {
       padding-top: 15px;
@@ -45,74 +51,136 @@
       border-radius: 0;
       margin-bottom: 0;
       font-size: 12px;
-      letter-spacing: 5px;
+      letter-spacing: 3px;
+	  position: fixed;
   }
   .navbar-nav  li a:hover {
-      color: #1abc9c !important;
+      color: #ccffff !important;
   }
+  .brand {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+  }
+  
+ 
   </style>
-</head>
-<body>
+  </head>
+  
+<body data-spy="scroll" data-target=".navbar">
 
 <!-- Navbar -->
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navBar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span>  
+		<span class="icon-bar"></span>                      
       </button>
-      <a class="navbar-brand" href="#">Me</a>
+	  
+	  <div class="nav">
+		<a class="brand" href="#">Jacob Miecznikowski</a>
+	  </div>
+	  
+      
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">WHO</a></li>
-        <li><a href="#">WHAT</a></li>
-        <li><a href="#">WHERE</a></li>
+    <div class="collapse navbar-collapse nav-justified navbar-fixed-top" id="navBar">
+	  
+      <ul class="nav navbar-nav navbar-left">
+	    <li><a class="smoothscroll" href="#home">Home</a></li>
+        <li><a class="smoothscroll" href="#about">About</a></li>
+        <li><a class="smoothscroll" href="#work">Work</a></li>
+        <li><a class="smoothscroll" href="#contact">Contact</a></li>
       </ul>
+	  
+	  <ul class="nav navbar-nav navbar-right">
+	    <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="music.html">Music &zwnj; &zwnj;</a></li>
+      </ul>
+	  
     </div>
   </div>
 </nav>
 
-<!-- First Container -->
-<div class="container-fluid bg-1 text-center">
-  <h3 class="margin">Hi, I'm Jacob Miecznikowski</h3>
-  <img src="img/Me.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Me" width="350" height="350">
-  <h3>Welcome to my site and good job spelling my last name correctly!</h3>
-</div>
+<!-- Introduction -->
+	<div class="container-fluid introduction text-center" id="home">
+	  <h3 class="margin">Hi, I'm Jacob Miecznikowski</h3>
+	  <img src="img/Me.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Me" width="250" height="250">
+	  <h3>Innovator, Learner, Dreamer</h3>
+	</div>
 
-<!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
-  <h3 class="margin">What I Do</h3>
-  <p>I am a student at Purdue University studying Computer Science with concentrations in Security and Software Engineering. I plan to minor in Computer Engineering and obtain a Entrepreneurial Certificate as well.</p>
-  <a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-search"></span> Search
-  </a>
-</div>
+<!-- About -->
+	<div class="container-fluid about text-center" id="about">
+		<div class="row">
+		<div class="col-sm-4">
+		</div>
+		<div class="col-sm-4">
+			<h3 class="margin">Who I Am</h3>
+			<p>I am a student at Purdue University studying Computer Science with concentrations in Security and Software Engineering. I plan to minor in Computer Engineering and obtain an Entrepreneurial Certificate as well.</p>
+	  
+		</div>
+		<div class="col-sm-4">
+		</div>
+	    </div>
+	
+	
+	
+	  
+	</div>
 
-<!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Where To Find Me?</h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
+<!-- Work -->
+<div class="container-fluid work text-center" id="work"> 
+  <h3 class="margin">My Work</h3>
+  
+  <p>I have extensive experience in Java and Python, and a moderate amount of experience with C.</p>
+ 
+  <h4>Android Projects</h4>
+
+    <a href="/apps/test.apk" download>
+    <center><img border="0" src="/img/TextBomberIcon.png" alt="Text Bomber" width="140" height="140"></center>
+    </a><br><br>
+	
+	  <center><h2>Python Projects</h2></center>
+	   <center><img border="0" src="/img/00SengTitle.png" alt="00Seng Logo" width="750" height="150"></center>
+	  
+	  <center><img border="0" src="/img/00SengPoster.png" alt="00Seng Poster" width="600" height="485"></center>
+    <p>	    
+	    <center><p>Code can be found on GitHub <a href="https://github.com/jmieczni/00Seng">Here.</a><br></center>
+	<center><video width="600" controls>
+	<source src="vid/00Seng.mp4" type="video/mp4">
+	Your browser does not support HTML5 video.
+		</video></center>
+</div>  
+
+<!-- Contact and Map -->
+<div class="introduction text-center container-fluid" id="contact">  
+  <h3 class="margin">Contact</h3><br>
+  
+  <iframe width="600" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJhUJBj7PiEogRZKDV8FC_vjI&key=AIzaSyBrMdzZkm4FWKkrRgru6dfL6vmrYNrqHrE" allowfullscreen></iframe>
+  
+  <p>Feel free to reach out to me via email or check out my projects on GitHub</p>
+  
+   <div class="row">
+	<div class="col-sm-6">
+		<img src="img/EmailIcon.png" class="img-responsive img-circle margin" style="display:inline" alt="Email Icon" width="150" height="150">
+	</div>
+	<div class="col-sm-6">
+		<img src="img/GitHubIcon.png" class="img-responsive img-circle margin" style="display:inline" alt="GitHub Icon" width="150" height="150">
+	</div>
   </div>
+  
+  
 </div>
 
 <!-- Footer -->
-<footer class="container-fluid bg-4 text-center">
-  <p>&copy; 2017 Jacob Miecznikowski</p> 
+<footer class="footer text-center">
+  
+  <a href="#" class="btn btn-default btn-lg text-center">
+    <span class="glyphicon glyphicon-chevron-up text-center"></span>
+  </a>
+  <p class="text-right">&copy; 2017 Jacob Miecznikowski &zwnj; &zwnj;</p> 
 </footer>
 
 </body>

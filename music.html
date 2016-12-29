@@ -1,29 +1,117 @@
 <!DOCTYPE html>
-<html>
-
-  <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <title>Jacob's Website</title>
-	
-	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="about.html">About</a></li>
-		<li><a href="work.html">Work</a></li>
-		<li><a href="music.html">Music</a></li>
-	</ul> 
-	
+<html lang="en">
+<head>
+  
+  <title>Jacob Miecznikowski's Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="/img/favicon.png">
+  
+  <style>
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 18px;}
+  .margin {margin-bottom: 45px;}
+  
+  .introduction { 
+      background-color: #333366; /* Green */
+      color: #ffffff;
+  }
+  .about { 
+      background-color: #336666; /* Dark Blue */
+      color: #ffffff;
+  }
+  .work { 
+      background-color: #ccffff; /* White */
+      color: #555555;
+  }
+  .footer { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+	  padding-top: 20px;
+      padding-bottom: 20px;
+  }
+  .container-fluid {
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 3px;
+	  position: fixed;
+  }
+  .navbar-nav  li a:hover {
+      color: #ccffff !important;
+  }
+  .brand {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+  }
+  
+ 
+  </style>
   </head>
   
-  <body>
+<body data-spy="scroll" data-target=".navbar">
+
+<!-- Navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navBar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>  
+		<span class="icon-bar"></span>                      
+      </button>
+	  
+	  <div class="nav">
+		<a class="brand" href="#">Jacob Miecznikowski</a>
+	  </div>
+	  
+      
+    </div>
+    <div class="collapse navbar-collapse nav-justified navbar-fixed-top" id="navBar">
+	  
+      <ul class="nav navbar-nav navbar-left">
+	    <li><a href="index.html">Home</a></li>
+      </ul>
+	  
+	  <ul class="nav navbar-nav navbar-right">
+	    <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="#music">Music &zwnj; &zwnj;</a></li>
+      </ul>
+	  
+    </div>
+  </div>
+</nav>
   
-    <br>
-	<br>
-  
-    <div align="center">
+    <div class="container-fluid about" align="center" id="music">
+	
+		<h3 class="margin">Star Wars Medley</h3>
 		<iframe width="750" height="422" src="https://www.youtube.com/embed/y6QDG1BgoPY" frameborder="0" allowfullscreen></iframe>
 	</div>
+	
+<!-- Footer -->
+<footer class="footer text-center">
   
-  </body>
+  <p class="text-center">&copy; 2017 Jacob Miecznikowski</p> 
+</footer>
 
+</body>
 </html>
