@@ -63,20 +63,29 @@
     left: 50%;
     position: absolute;
   }
-  .google-maps {
-    position: relative;
-    padding-bottom: 90%; // (450 ÷ 500 = 0.9 = 90%)
-    height: 0;
-    overflow: hidden;
- }
- .google-maps iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
- }
 
+ .background {
+	  background-image: url(img/Waterfall.jpg);
+	  background-position: center center;
+	  background-size: cover;
+ }
+.box{ 
+  background-color: grey;
+  color: #fff; 
+  
+  display: inline;
+  padding: 0.01rem;
+  opacity: 0.9;
+  
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.belltower{
+	background-image: url(img/BellTower.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
   
  
   </style>
@@ -120,29 +129,25 @@
 </nav>
 
 <!-- Introduction -->
-	<div class="container-fluid introduction text-center" id="home">
+	<div class="container-fluid introduction text-center background" id="home">
 	  <h3 class="margin">Hi, I'm Jacob Miecznikowski</h3>
 	  <img src="img/Me.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Me" width="250" height="250">
-	  <h3>Innovator, Learner, Dreamer</h3>
+	  <br>
+	  <h4 class="box"><font color="white"> Innovator, Learner, Dreamer</font></h4>
 	</div>
 
 <!-- About -->
-	<div class="container-fluid about text-center" id="about">
+	<div class="container-fluid about text-center belltower" id="about">
 		<div class="row">
-		<div class="col-sm-4">
-		</div>
-		<div class="col-sm-4">
-			<h3 class="margin">Who I Am</h3>
-			<p>I am a student at Purdue University studying Computer Science with concentrations in Security and Software Engineering. I plan to minor in Computer Engineering and obtain an Entrepreneurial Certificate as well.</p>
-	  
-		</div>
-		<div class="col-sm-4">
-		</div>
+			<div class="col-sm-4">
+			</div>
+			<div class="col-sm-4">
+				<h3 class="margin">Who I Am</h3>
+				<p>I am a student at Purdue University studying Computer Science with concentrations in Security and Software Engineering. I plan to minor in Computer Engineering and obtain an Entrepreneurial Certificate as well.</p>
+			</div>
+			<div class="col-sm-4">
+			</div>
 	    </div>
-	
-	
-	
-	  
 	</div>
 
 <!-- Work -->
