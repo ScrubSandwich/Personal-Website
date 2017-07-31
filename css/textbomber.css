@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+
 body {
-  font-family: 'Tangerine', serif;
+  font-family: 'Ubuntu Condensed', sans-serif;
   margin: auto;
   width: 50%;
   border: 3px solid red;
