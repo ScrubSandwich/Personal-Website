@@ -1,26 +1,6 @@
-* {
-   background: #fdf9ff;
-   color: #340808;
-   font-size: 1em;
-   text-align: center;
-   line-height: 1.5rem;
-}
-
-.download {
-
-}
-
-h1 {
-    font-size: 5rem;
-    margin-top: 4rem;
-}
-
-h3 {
-    font-size: 3.5rem;
-    margin: 3rem;
-
-}
-
-p {
-    font-family 
+body {
+  margin: auto;
+  width: 50%;
+  border: 3px solid red;
+  padding: 10px;
 }
