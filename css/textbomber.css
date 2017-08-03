@@ -12,3 +12,7 @@ img {
     max-width: 25%;
     height: auto;
 }
+
+img:hover {
+    border: 1px solid red;
+}
