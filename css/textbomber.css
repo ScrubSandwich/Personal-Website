@@ -11,6 +11,7 @@ body {
 img {
     max-width: 25%;
     height: auto;
+    padding: 0.25rem;
 }
 
 img:hover {
